@@ -1,0 +1,172 @@
+
+.sociallinks {
+   float: right;
+}
+
+.socialicons {
+	margin:-10px 0px -10px 0px;
+	width:30px;
+	height:30px;
+}
+
+// define colors :
+@hsk-purple: #CA80F7;
+@hsk-purple2: #A324F2;
+@hsk-green: #2AD728;
+@hsk-blue: #5D51A4;
+@hsk-yellow: #C3DD2E;
+@hsk-red: #DB592C;
+@hsk-gray: #BAB1D8;
+
+@bb-pink: #FC8589;
+@bb-pink2: #FAB8C2;
+@bb-yellow: #FDEA8E;
+@bb-yellow2: #f9eea8A;
+@bb-yellow3: #fff8d7;
+@bb-blue: #7FCAF2;
+@bb-green: #B5E1B0;
+@bb-white: white;
+
+@color-blue2: #FFCD46; 
+@color-gray90: @bb-yellow3;
+@color-orange-red1: @hsk-purple;
+@color-yellow-light1: @bb-green;
+@color-gray-middle3: @hsk-purple2;
+
+// text color:
+@primary__color: #333333;
+
+// Link colors:
+@link__color: @hsk-purple2;
+@link__hover__color: @hsk-red;
+@link__visited__color: @hsk-purple2;
+
+// buttons:
+@button__color: @bb-white; 
+@button__background: @hsk-purple2;
+@button__border: 1px solid @hsk-purple2;
+
+
+// site colors:
+@navigation-desktop-level0-item__color: @color-white;
+@navigation-desktop-level0-item__hover__color: @hsk-purple2;
+@navigation-desktop-level0-item__active__border-color: @hsk-purple2;
+@navigation-desktop-level0-item__active__color: @color-white;
+@navigation-desktop-level0-item__active__background: @hsk-purple2;
+
+// @navigation-desktop-level1-item__color: @hsk-purple2;
+
+
+@submenu-desktop-item__hover__background: @hsk-purple2;
+@submenu-desktop-item__active__border-color: @hsk-purple2;
+@submenu-desktop-item__color: @hsk-purple2;
+@submenu-desktop-item__hover__color: @color-white;
+
+
+// site colors:
+@navigation__background: @hsk-purple;
+
+@navigation-level0-item__color: @color-white;
+@navigation-level0-item__active__border-color: @hsk-green;
+@navigation-level0-item__active__color: '';
+
+@submenu-item__active__border-color: @color-white;
+
+@copyright__background-color: @hsk-purple2;
+
+// Messages:
+@message-success__background: @bb-green;
+@message-info__background: @bb-green;
+@message-warning__background: @bb-green;
+
+
+// buttons:
+.action {
+        &.primary {
+                background-color: @hsk-purple2;
+                border-color: @hsk-purple2;
+        }
+}
+
+
+//Logo:
+
+.header.content {
+    padding: 10px 20px 0;
+}
+
+@media (min-width: 768px) {
+	.checkout-cart-index, .cms-home,
+   	.page-layout-2columns-left, .page-layout-1column  {
+		& .logo {
+               		margin: -50px auto 10px 0;
+		}
+   	}
+}
+
+// checkout page. Classes: checkout-index-index page-layout-checkout
+.page-layout-checkout .logo {
+  		margin: 0px auto 10px 0;
+}
+
+// Shopping card hack, disable region
+
+[name="shippingAddress.region"] {
+        display: none;
+}
+
+// Other:
+.minicart-wrapper .action.showcart .counter.qty {
+	background: @hsk-purple;
+}
+
+//.modes-mode {
+//	background-color: @hsk-green;
+//}
+
+//.modes-mode.active {
+//	background: @bb-yellow3;
+//}
+
+//.toolbar select {
+//	    background-color: @hsk-green;
+//}
+
+// Mobile version:
+@media (max-width: 767px) {
+        .nav-sections-item-title.active {
+                border: solid;
+                border-width: 0 0 3px;
+                border-color: @color-white;
+                background: @hsk-purple;
+        }
+
+	.logo {
+		max-width: 75%;
+	}
+
+
+	.logo img {
+		content:url('@{baseDir}images/houtenspeelgoedkeukentje-header-02.png');
+	}
+
+
+        a, .alink {
+                color: @color-white;
+        }
+
+        .nav-sections-item-title {
+                border-width: 1 0 1 0px;
+//                border-color: @bb-pink2;
+                border: none;
+                background: @hsk-purple;
+        }
+//        .header.content {
+//                background: @color-white;
+//        }
+}
+
+/*
+lib/web/css/source/lib/variables/_messages.less
+*/
+
